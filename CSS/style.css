@@ -1,0 +1,187 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-nav {
+  background-color: rgb(209, 130, 26);
+}
+.custom-nav .custom-nav-brand {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 10px white;
+}
+
+.banner {
+  height: 50vh;
+  background-image: url(../images/anas-alshanti-feXpdV001o4-unsplash.jpg);
+  background-color: rgba(0, 0, 0, 0.715);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color-dodge;
+  align-content: center;
+}
+@media screen and (max-width: 992px) {
+  .banner {
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner .row {
+    flex-direction: column-reverse;
+  }
+  .banner .row .aboutme {
+    margin-top: 10px;
+  }
+  .banner .row .profile-pic-div {
+    text-align: center;
+  }
+  .banner .row .profile-pic-div .profile-pic {
+    height: 200px !important;
+    width: 200px !important;
+    border-radius: 50%;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner .row .aboutme {
+    margin-top: 10px;
+  }
+  .banner .row .profile-pic-div .profile-pic {
+    height: 100px !important;
+    width: 100px !important;
+  }
+}
+.banner .row {
+  justify-content: center;
+}
+.banner .row .aboutme {
+  color: white;
+  margin-top: 10%;
+  height: 80%;
+  width: 80%;
+  padding: 10px 10px 10px 0;
+}
+.banner .row .profile-pic-div .profile-pic {
+  height: 100%;
+  width: 100%;
+}
+
+.card_area {
+  background-color: rgb(16, 1, 16);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.card_area .custom-card {
+  background-color: rgb(209, 130, 26);
+  color: white;
+}
+.card_area .custom-card .card-text {
+  color: black;
+}
+
+.skills {
+  background-color: rgb(16, 1, 16);
+  padding: 0 0 40px 0;
+}
+@media screen and (max-width: 576px) {
+  .skills .skilldiv ul {
+    justify-content: space-evenly !important;
+  }
+  .skills .skilldiv ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.skills .skilldiv .skillshead {
+  background-color: white;
+  width: 150px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  color: black;
+  margin-bottom: 50px;
+}
+.skills .skilldiv ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+.skills .skilldiv ul li {
+  color: white;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(209, 130, 26);
+  border-radius: 50%;
+  position: relative;
+}
+.skills .skilldiv ul li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skills .skilldiv ul li:hover {
+  transition: 0.5s ease-out;
+  background-color: white;
+  color: black;
+}
+
+.contact {
+  padding: 30px 0 30px 0;
+  background-color: rgb(209, 130, 26);
+}
+@media screen and (max-width: 576px) {
+  .contact .form {
+    text-align: center;
+  }
+  .contact .form input {
+    margin: 0 auto;
+  }
+}
+.contact .form label {
+  color: white;
+}
+.contact .form input, .contact .form textarea {
+  width: 50%;
+}
+.contact .socialdiv {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 576px) {
+  .contact .socialdiv {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .contact .socialdiv a {
+    margin: 0 auto;
+  }
+}
+.contact .socialdiv .socialhead {
+  color: white;
+}
+.contact .socialdiv a {
+  padding: 10px;
+  width: 200px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: none;
+}
+.contact .socialdiv a:hover {
+  color: rgb(209, 130, 26);
+}
+
+.foot {
+  padding: 10px 0 10px 0;
+  background-color: rgb(16, 1, 16);
+  color: white;
+}/*# sourceMappingURL=style.css.map */
